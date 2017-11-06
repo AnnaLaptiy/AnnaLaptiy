@@ -3,6 +3,7 @@ package lab2;
 import java.util.Scanner;
 
 public class Z37 {
+
     public static void main(String[] args) {
         Scanner str=new Scanner(System.in);
         double a,b,c,d,v;
