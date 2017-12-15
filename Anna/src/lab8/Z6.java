@@ -1,31 +1,24 @@
 package lab8;
-
-
 import java.util.Scanner;
-
 public class Z6 {
     public static void main(String[] args) {
         Scanner str=new Scanner(System.in);
+        String a=str.nextLine();
+        String[] srr = a.split(" ");
+        String f = srr[srr.length-1];
+//        srr[5]=srr[4];
+//        srr[4] = srr[3];
+//        srr[3]=srr[2];
+//        srr[2]=srr[1];
+//        srr[1]=srr[0];
+        for (int  i=srr.length-1; i>0; i--){
+            srr[i]=srr[i-1];
+        }
+        srr[0]=f;
 
-        int[] addArray = {2}; 
-        int offset = addArray.length;
-        int a[] = {1, 2, 3, 4, 1, 2};
-        int b[] = new int[a.length + offset];
-        System.out.print("Массив  до   сдвига: ");
-        for (int i = 0; i < a.length; i++) {
-            System.out.print(a[i] + " ");
-            b[i + offset] = a[i];
-            a[i] = b[i];
-        }
-        System.out.println();
-        for (int i = 0; i < offset; i++) {
-            a[i] = addArray[i];
-        }
-        System.out.print("Массив после сдвига: ");
-        for (int i : a) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
-    }}
+        for (int i=0; i<srr.length; i++)
+            System.out.print(srr[i] + " ");
+    }
+}
 
 

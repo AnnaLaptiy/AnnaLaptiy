@@ -11,6 +11,7 @@ public class Z5 {
         else if (d < 0 || d > 10)
             System.out.println("Число Q должно быть в интервале [0, размер массива)");
         else {
+
             int[] array = {1, 2, 3, 4, 1, 2};
             int temp = array[b];
             array[b] = array[d];
